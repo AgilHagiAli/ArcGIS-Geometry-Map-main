@@ -133,8 +133,6 @@ export class MapComponent implements OnInit {
       'esri/widgets/Locate',
       "esri/identity/OAuthInfo",
       "esri/identity/IdentityManager"
-
-      
     ]).then(
       ([
         Map,
