@@ -191,6 +191,7 @@ export class MapComponent implements OnInit {
             title: 'Address: {Address} ', //</br>{Address}
             overwriteActions: true,
           },
+          
           outFields: ['*'],
         });
 
@@ -201,6 +202,7 @@ export class MapComponent implements OnInit {
             title: 'Grid No: {GridNo}',
             overwriteActions: true,
           },
+
           outFields: ['*'],
         });
 
