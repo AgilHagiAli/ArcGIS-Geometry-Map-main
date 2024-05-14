@@ -1,0 +1,143 @@
+#mapView {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+#toolbarDiv {
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.esri-widget--button.active,
+.esri-widget--button.active:hover,
+.esri-widget--button.active:focus {
+    cursor: default;
+    background-color: #969799;
+    }
+.esri-widget--button.active path,
+.esri-widget--button.active:hover path,
+.esri-widget--button.active:focus path {
+      fill: #E4E4E4;
+    }
+    
+    .active {
+      background-color: red;
+    }
+    
+
+
+
+
+    #map {
+      height: 400px; /* Set the desired height for your map container */
+    }
+    
+    button {
+      position: fixed;
+      bottom: 35px;
+      padding: 6px; /* Adjust the padding for smaller buttons */
+      font-size: 16px; /* Adjust the font size for smaller buttons */
+      cursor: pointer;
+      background-color: lightblue;
+      border: 1px solid #007BFF;
+      border-radius: 8px;
+      margin-right: 8px; /* Add space between buttons */
+    }
+    
+    #startDrawingButton {
+      right: 2%;
+      bottom: 80px;
+    }
+    #ion-toolbar {
+      background-color: #cc7e7e; /* Replace with the desired background color */
+    }
+    
+    #undoDrawingButton {
+      bottom: 30px;
+      border-radius: 50%;
+      width: 50px; /* Adjust size as needed */
+      height: 50px; /* Adjust size as needed */
+      left: calc(15% + 25px); /* Adjust left position to create space between buttons */
+      background-color: black;
+      border: 1px solid black;
+      color: white;
+      margin: 5px; /* Adjust margin as needed */
+    }
+    #addPolygon {
+      bottom: 30px;
+      left: calc(50% - 25px); /* Center horizontally */
+      border-radius: 50%;
+      width: 50px; /* Adjust size as needed */
+      height: 50px; /* Adjust size as needed */
+      background-color:rgb(148, 73, 192);
+      border: 1px solid rgb(148, 73, 192);
+      color: white;
+      margin: 5px; /* Adjust margin as needed */
+    }
+    #clearDrawingButton {
+      left: 10px; /* Adjust right position */
+      bottom: 30px;
+      background-color: #f10000;
+      font-weight: bold;
+    }
+    #clearDrawingButton:hover {
+      background-color: #883333;
+    }
+    #submitDrawingButton {
+      right: 10px; /* Adjust right position */
+      bottom: 30px;
+      background-color: #08e600;
+    }
+    #submitDrawingButton:hover  {
+      background-color: #679c65;
+    }
+    #addVertexButton {
+      right: calc(15% + 25px); /* Adjust right position */
+      bottom: 30px;
+      background-color: #4388e4;
+    }
+    #addVertexButton:hover {
+      background-color: #275b9e;
+    }
+    #myCheckbox {
+      position: absolute;
+      top: 250px; /* Adjust top position */
+      left: 30px; /* Adjust left position */
+      transform: scale(1); /* Increase size */
+    }
+    #hidebuttons {
+      position: absolute;
+      top: 250px; /* Adjust top position */
+      left: 75px; /* Adjust left position */
+      transform: scale(1); /* Increase size */
+      background-color: white; /* Set background color */
+      padding: 2px; /* Add padding around the text */
+      border-radius: 10px;
+    }
+    .round-button {
+      border-radius: 50%;
+      width: 50px; /* Adjust size as needed */
+      height: 50px; /* Adjust size as needed */
+      color: white; /* Default text color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin: 5px; /* Adjust margin as needed */
+      font-size: 25px; /* Adjust font size as needed */
+    }
+    .material-icons {
+      width: 25px;
+      height: 25px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+
+  

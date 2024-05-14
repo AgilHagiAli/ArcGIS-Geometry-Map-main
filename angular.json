@@ -1,0 +1,116 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "arcgis-map-viewer": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/arcgis-map-viewer",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/somalia.512x370.ico",
+              "src/assets"
+
+            ],
+            "styles": [
+              "node_modules/@arcgis/core/assets/esri/css/view.css",
+              "node_modules/@arcgis/core/assets/esri/css/main.css",
+              "node_modules/@arcgis/core/assets/esri/themes/light/main.css",
+              "node_modules/@arcgis/core/assets/esri/themes/light/view.css",
+              "node_modules/@arcgis/core/assets/esri/themes/base/colors/patterns_json/complete.css"
+
+
+            ],
+            "scripts": [
+              "node_modules/arcgis-js-api/intl.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "arcgis-map-viewer:build:production"
+            },
+            "development": {
+              "buildTarget": "arcgis-map-viewer:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "arcgis-map-viewer:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/somalia.512x370.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/@arcgis/core/assets/esri/css/view.css",
+              "node_modules/@arcgis/core/assets/esri/css/main.css",
+              "node_modules/@arcgis/core/assets/esri/themes/light/main.css",
+              "node_modules/@arcgis/core/assets/esri/themes/light/view.css"
+            ],
+            "scripts": [
+              "node_modules/@arcgis/core/intl.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "11e07aa2-110c-48e3-9f7d-b7d9d5b9a750"
+  }
+}
+//Developed by Abdirazaaq Agil Hagi Ali

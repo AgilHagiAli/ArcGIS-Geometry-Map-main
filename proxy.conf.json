@@ -1,0 +1,8 @@
+{
+    "/arcgis/*": {
+      "target": "https://iservices6.arcgis.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  
