@@ -105,6 +105,9 @@
               "node_modules/@arcgis/core/intl.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
