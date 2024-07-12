@@ -26,7 +26,7 @@ import { Buffer } from 'buffer';
 import { Router, ActivatedRoute } from '@angular/router';
 
 interface Property {
-  id: number;
+  id: number ;
   parcelNumber: string;
   propertyLocation: string;
   subLocation: string | null;
